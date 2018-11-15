@@ -1,4 +1,4 @@
-pipeline {
+ pipeline {
     agent any
     stages {
         stage ('Build Servlet Project') {
@@ -33,7 +33,7 @@ pipeline {
                     input message: 'Approve PRODUCTION Deployment?'
                 }
                 
-                build job : 'Deploy-Production-Pipeline'
+                build job : 'Deploy-production-pipeline'
             }
 
             post{
