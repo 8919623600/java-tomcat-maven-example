@@ -4,6 +4,8 @@
     stages {
         stage ('Build Servlet Project') {
             steps {
+
+                build job : 'packer_servlet_pipeline'
                 /*For windows machine */
                bat  'mvn clean package'
 
